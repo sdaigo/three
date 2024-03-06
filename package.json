@@ -1,24 +1,20 @@
 {
-  "name": "anticancel-site",
+  "name": "root",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "turbo build --filter=./apps/*",
+    "dev": "turbo dev"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "prettier": "^3.2.5",
+    "@biomejs/biome": "1.5.3",
+    "@three/typescript-config": "*",
+    "lefthook": "^1.6.5",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=18"
   },
   "packageManager": "bun@1.0.29",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "workspaces": ["apps/*", "packages/*"]
 }

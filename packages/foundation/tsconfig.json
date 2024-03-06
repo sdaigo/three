@@ -1,0 +1,6 @@
+{
+  "extends": "@three/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}
