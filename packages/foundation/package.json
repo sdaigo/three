@@ -7,10 +7,11 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "dev": "panda codegen -w",
-    "dev:studio": "panda studio",
+    "prepare": "panda codegen",
+    "dev": "panda studio",
     "build": "tsup ./src/index.ts",
-    "lint": "biome lint ./src"
+    "lint": "biome lint ./src",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf styled-system"
   },
   "dependencies": {},
   "devDependencies": {

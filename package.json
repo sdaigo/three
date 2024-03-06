@@ -2,8 +2,10 @@
   "name": "root",
   "version": "0.0.0",
   "private": true,
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
-    "build": "turbo build --filter=./apps/*",
+    "build": "turbo build",
+    "clean": "turbo clean",
     "dev": "turbo dev"
   },
   "devDependencies": {
@@ -15,6 +17,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "bun@1.0.29",
-  "workspaces": ["apps/*", "packages/*"]
+  "packageManager": "bun@1.0.29"
 }

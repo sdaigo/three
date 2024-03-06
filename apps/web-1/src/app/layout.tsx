@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 
 import { css } from "@/styled-system/css";
 import { SITE_TITLE } from "@three/const";
+import { add } from "@three/libs/calc";
 
 import type { Metadata } from "next";
 
@@ -19,11 +20,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log(add);
   const color = css({ color: "ultra.800" });
   return (
     <html lang="ja">
       <body className={inter.className}>
-        <div className={color}>{children}</div>
+        <div className={color}>
+          {add(1, 2)}
+          {children}
+        </div>
       </body>
     </html>
   );

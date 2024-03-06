@@ -5,6 +5,7 @@
     "build": {
       "outputs": [".next/**", "!.next/cache/**", "dist/**", "styled-system/**"]
     },
+    "clean": {},
     "lint": {},
     "dev": {
       "cache": false,
